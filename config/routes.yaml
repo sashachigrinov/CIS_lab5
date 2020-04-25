@@ -1,3 +1,99 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+# USERS ROUTES
+GetUsers:
+  path:       /getUsers
+  controller: App\Controller\UsersController::GetUsers
+  methods:    GET
+
+GetUser:
+  path:       /getUser/{id}
+  controller: App\Controller\UsersController::GetUsero
+  methods:    GET
+  defaults:
+    id: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+PostUser:
+  path:       /postUser
+  controller: App\Controller\UsersController::PostUser
+  methods:    POST
+
+PutUser:
+  path:       /putUser/{id}
+  controller: App\Controller\UsersController::PutUser
+  methods:    PUT
+  defaults:
+    id: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+DeleteUser:
+  path:       /deleteUser/{id}
+  controller: App\Controller\UsersController::DeleteUser
+  methods:    DELETE
+  defaults:
+    id: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+# FILES ROUTES
+GetFiles:
+  path:       /getFiles/{userId}
+  controller: App\Controller\FilesController::GetFiles
+  methods:    GET
+  defaults:
+    userId: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+GetFile:
+  path:       /getFile/{id}
+  controller: App\Controller\FilesController::GetFile
+  methods:    GET
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+PostFile:
+  path:       /postFile
+  controller: App\Controller\FilesController::PostFile
+  methods:    POST
+
+PutFile:
+  path:       /putFile/{id}
+  controller: App\Controller\FilesController::PutFile
+  methods:    PUT
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+DeleteFile:
+  path:       /deleteFile/{id}
+  controller: App\Controller\FilesController::deleteFile
+  methods:    DELETE
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+# MESSAGES
+GetMessages:
+  path:       /getMessages/{userId}
+  controller: App\Controller\MessagesController::GetMessages
+  methods:    GET
+  defaults:
+    userId: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+GetMessage:
+  path:       /getMessage/{id}
+  controller: App\Controller\MessagesController::GetMessage
+  methods:    GET
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+PostMessage:
+  path:       /postMessage
+  controller: App\Controller\MessagesController::PostMessage
+  methods:    POST
+
+PutMessage:
+  path:       /putMessage/{id}
+  controller: App\Controller\MessagesController::PutMessage
+  methods:    PUT
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+DeleteMessage:
+  path:       /deleteMessage/{id}
+  controller: App\Controller\MessagesController::deleteMessage
+  methods:    DELETE
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
